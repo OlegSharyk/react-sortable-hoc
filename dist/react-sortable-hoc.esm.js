@@ -816,7 +816,7 @@ function sortableContainer(WrappedComponent) {
                   });
                 }
 
-                _this.listenerNode = event.touches ? _node : _this.contentWindow;
+                _this.listenerNode = event.touches ? event.target : _this.contentWindow;
 
                 if (_isKeySorting) {
                   _this.listenerNode.addEventListener('wheel', _this.handleKeyEnd, true);
